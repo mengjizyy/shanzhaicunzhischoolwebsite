@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        header {
+            height: 190px;
+            text-align: center;
+        }
+
+        nav {
+                    height: 45px;
+                    background-color: #086c70;
+                    color: white;
+                    text-align: center;
+                    margin-bottom:70px;
+                }
+        
+        /* 下拉按钮样式 */
+        .dropbtn {
+            background-color: #086c70;
+            width: 100px;
+            height: 45px;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        /* 容器 <div> - 需要定位下拉内容 */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* 下拉内容 (默认隐藏) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #086c70;
+            width: 100px;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 8px 16px 0px #086c70;
+            border-radius: 0px 0px 10px 10px;
+        }
+        
+        /* 下拉菜单的链接 */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        /* 鼠标移上去后修改下拉菜单链接颜色 */
+        .dropdown-content a:hover {
+            background-color: #0b858a;
+        }
+        
+        /* 在鼠标移上去后显示下拉菜单 */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+        .dropdown:hover .dropbtn {
+            background-color: #0b858a;
+        }
+
+        .dropbtn:hover {
+            background-color: #0b858a;
+            color:white;
+        }
+
+        .box {
+            width: 350px;
+            height: 190px;
+            padding: 10px;
+            margin: 10px;
+            border:0px solid #086c70;
+            border-radius: 20px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .box:hover {
+            width: 360px;
+            height: 205px;
+            box-shadow: 0px 16px 32px 0px #00000015;
+            margin: 4.5px;
+        }
+
+        .box a {
+            transition: all 0.3s;
+            display: block;
+            color: black;
+            font-size: 17px;
+            text-decoration: none;
+            padding: 5px;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .box:hover a {
+            padding: 6px;
+        }
+
+        .box a:hover {
+            
+            background-color: #00000015;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        .title {
+            font-weight: 900;
+            margin: 0px;
+            padding: 5px;
+            text-align: left;
+            border-bottom: #086c70 solid 2px;
+        }
+
+        .content {
+            display: inline;
+        }
+
+        .date {
+            color: #00000030;
+            float: right;
+            display: inline;
+        }
+
+        footer {
+            text-align: center;
+            color: black;
+            background-color: #00000015;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin:10px
+        }
+
+        </style>
+        
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="http://www.cunzhi.edu.sh.cn/images/logo2023_2.png" style="width: 350px;">
+        </a>
+        <img src="http://www.cunzhi.edu.sh.cn/dfiles/14091/themes/12591/default_10081/images/doornew.png" style="width: 500px;">
+    </header>
+
+    <nav>
+        <button class="dropbtn">首页</button>
+
+        <div class="dropdown">
+            <button class="dropbtn">关于存志</button>
+            <div class="dropdown-content">
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">特色教育</button>
+            <div class="dropdown-content">
+                <a href="#">8-5=4</a>
+                <a href="#">东校传奇</a>
+                <a href="https://mengjizyy.github.io/heart-cold/">《心寒》</a>
+                <a href="#">replace</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">校园生活</button>
+            <div class="dropdown-content">
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">学校管理</button>
+            <div class="dropdown-content">
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">教学科研</button>
+            <div class="dropdown-content">
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">信息公开</button>
+            <div class="dropdown-content">
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+                <a href="#">replace</a>
+            </div>
+        </div>
+
+    </nav>
+    
+    <div style="text-align: center;">
+
+        <div class="box">
+            <p class="title">学校新闻</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">德育特色</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">社团展示</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">教师发展</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">党建工作</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">通知公告</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">每周安排</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">每周菜谱</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <p class="title">replace</p>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+            <a href="#">
+                <p class="content">replace replace replace</p>
+                <p class="date">xxxx.xx.xx</p>
+            </a>
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <p>单位地址：上海市许昌路1474号</p>
+        <p>邮编编码：200092 　联系电话：021-65036236</p>
+        <p>电子邮箱：czxx1474@163.com</p>
+        <p>网站地址：http://www.cunzhi.edu.sh.cn</p>
+    </footer>
+
+</body>
+</html>
